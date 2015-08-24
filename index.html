@@ -8,10 +8,50 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="main.js"></script>
+	
+	<style type="text/css">
+	body
+	{
+		 font-family: 'Open Sans', Helvetica, sans-serif;
+		 font-size: 20px;
+	}
+	#url
+	{
+    	width: 400px;
+		padding: 8px;
+		font-size: 24px;
+	}
+	
+	.heading
+	{
+		font-size: 40px;
+		font-weight: 100;
+		text-align: center;
+	}
+	
+	.content
+	{
+		text-align: center;
+	}
+	
+	.install
+	{
+		background: #0f8abe;
+		border: solid 1px #0090BB;
+		color: #FFF;
+		padding: 11px 24px;
+		line-height: 1px;
+
+	}
+	</style>
 
 </head>
 <body>
-Site url: <input type="text" id="url"><br>
-<input type="button" id="installButton" value="Install">
+	
+<p class="heading">Enter your site URL below to install <span id="pluginName"></span>.</p> 
+<p class="content">
+	<input type="text" id="url">
+	<a class="install" id="installButton">Install</a>
+</p>
 </body>
 </html>
