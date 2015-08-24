@@ -1,9 +1,12 @@
 $(document).on("ready", function()
 {
+    var plugin = getParameterByName("plugin");
+    $("#pluginName").text(plugin);
+    
     $("#installButton").on("click", function()
     {
         var url = $("#url").val();
-        var plugin = getParameterByName("plugin");
+        
         window.location.href = "http://" + url + "/wp-admin/plugin-install.php?tab=plugin-information&plugin=" + plugin;
     });
 });
