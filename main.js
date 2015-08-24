@@ -1,6 +1,9 @@
 $(document).on("ready", function()
 {
+    //Get the plugin slug.
     var plugin = getParameterByName("plugin");
+    
+    //Update the page with the plugin name.
     $("#pluginName").text(plugin);
     
     $("#installButton").on("click", function()
@@ -11,6 +14,7 @@ $(document).on("ready", function()
     });
 });
 
+//From http://stackoverflow.com/a/901144.
 function getParameterByName(name) 
 {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
