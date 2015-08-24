@@ -10,7 +10,13 @@ $(document).on("ready", function()
     {
         var url = $("#url").val();
         
-        window.location.href = "http://" + url + "/wp-admin/plugin-install.php?tab=plugin-information&plugin=" + plugin;
+        //Append the protocol if it doesn't exist. 
+        if (!/^https?:\/\//i.test(url)) 
+        {
+            url = "http://" + url;
+        }
+        
+        window.location.href =  url + "/wp-admin/plugin-install.php?tab=plugin-information&plugin=" + plugin;
     });
 });
 
