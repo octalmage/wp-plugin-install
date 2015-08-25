@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>WP Plugin Install</title>
 	
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+	
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="main.js"></script>
@@ -44,6 +46,11 @@
 		line-height: 1px;
 
 	}
+	
+	.github-fork-ribbon 
+	{
+        background-color: #0f8abe;
+    }
 	</style>
 
 </head>
@@ -54,5 +61,10 @@
 	<input type="text" id="url">
 	<a class="install" id="installButton">Install</a>
 </p>
+<div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/octalmage/wp-plugin-install">Fork me on GitHub</a>
+        </div>
+    </div>
 </body>
 </html>
