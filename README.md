@@ -7,7 +7,7 @@ Just add `?plugin=<plugin-slug>` to the URL then send the link to the user.
 
 Example: 
 
-http://octalmage.github.io/wp-plugin-install/?plugin=air-horn
+http://wp-plugin-install.com/?plugin=air-horn
 
 ## License 
 
