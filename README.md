@@ -11,4 +11,4 @@ http://wp-plugin-install.com/?plugin=air-horn
 
 ## License 
 
-GPL v2
+GPL v3
